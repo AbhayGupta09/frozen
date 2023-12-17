@@ -1,0 +1,228 @@
+#home-page {
+    background: var(--bg);
+    height: fit-content;
+    width: 100%;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* margin: 0px 10px 0px 10px; */
+    background-image: url('../image/bg/5073414.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    box-shadow: inset var(--bg) 0px 0px 50px -12px;
+    background-size: cover;
+}
+
+.item1 {
+    padding: 120px;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+.content {
+    margin-bottom: 10px;
+}
+
+.content span {
+    color: var(--brand-icon) !important;
+}
+
+.code-tag {
+    font-family: var(--font-text);
+    font-weight: 100;
+    color: var(--brand-icon-2);
+    font-size: 20px;
+}
+
+.heading-peragraph {
+    font-family: var(--font-text);
+    font-weight: 100;
+    color: white;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.heading-text {
+
+    font-size: 92px;
+    color: white;
+    padding-left: 20px;
+    font-family: var(--font-text);
+}
+
+.box {
+    background-color: red;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about-section {
+    margin-top: 10px;
+
+}
+
+.about-section .heading-text {
+    text-align: center;
+    color: var(--brand-icon);
+    font-size: 28px;
+    text-transform: capitalize;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../image/bg/about-bg2.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    box-shadow: inset var(--bg) 0px 0px 10px -12px;
+    background-size: cover;
+
+}
+
+.about .about-card {
+    width: 600px;
+    max-width: 720px;
+    background-color: rgba(47, 79, 79, 0.315);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 2px;
+
+    margin: 2px;
+
+}
+
+@media screen and (max-width: 376px) {
+    .page-header {
+        flex-direction: column;
+    }
+
+    .item1 {
+        padding: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .heading-peragraph {
+        font-size: 8px;
+        padding-left: 10px;
+    }
+
+    .heading-text {
+
+        font-size: 18px;
+
+    }
+
+    .code-tag {
+        font-size: 6px;
+    }
+
+    .content {
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 520px) {
+    .page-header {
+        flex-direction: column;
+    }
+
+    .item1 {
+        padding: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .heading-peragraph {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .heading-text {
+
+        font-size: 24px;
+
+    }
+
+    .code-tag {
+
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 521px) and (max-width: 768px) {
+
+
+    .heading-peragraph {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .heading-text {
+
+        font-size: 28px;
+
+    }
+
+    .code-tag {
+
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+
+    .heading-peragraph {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .heading-text {
+
+        font-size: 40px;
+
+    }
+
+    .code-tag {
+
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
+
+
+    .heading-peragraph {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .heading-text {
+
+        font-size: 76px;
+
+    }
+
+    .code-tag {
+
+        font-size: 16px;
+    }
+}

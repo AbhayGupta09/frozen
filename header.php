@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 
 <body>
     <header>
         <div class="header">
             <div class="logo">
-                <P class="logo-text">
                 <pre>&lt;/V&gt;</pre>
-                <span>Techno-V</span></P>
+                <span>Techno-V</span>
             </div>
             <nav>
                 <a href="" class="nav-item white">Home</a>

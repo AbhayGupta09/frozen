@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   /* fonts */
@@ -45,19 +46,24 @@
   margin: 0;
   -webkit-tap-highlight-color: transparent;
 }
+
 body {
   background-color: var(--bg);
 }
+
 a {
   text-decoration: none;
   color: var(--brand-icon);
 }
+
 .white {
   color: white !important;
 }
+
 .active {
   color: var(--active) !important;
 }
+
 .header {
   height: 55px;
   width: 100%;
@@ -68,8 +74,8 @@ a {
   left: 0;
   right: 0;
   height: 65px;
-  -webkit-box-shadow: 0 0.5rem 1rem var(--bg-1);
-  box-shadow: 0 0.5rem 1rem var(--bg-1);
+  -webkit-box-shadow: 0 1px 1rem var(--bg-1);
+  box-shadow: 0 1px 1rem var(--bg-1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +86,9 @@ a {
   z-index: 1;
   padding-right: 10px;
   padding-left: 10px;
+
 }
+
 .header .logo {
   display: flex;
   flex-direction: row;
@@ -88,11 +96,13 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
 .header .logo pre {
   color: var(--brand-icon-2);
   font-size: 26px;
   margin-right: 12px;
 }
+
 .header .logo span {
   font-family: var(--font-text);
   color: white;
@@ -100,6 +110,7 @@ a {
   font-weight: bolder;
   margin-right: 12px;
 }
+
 .header nav {
   position: relative;
   display: -ms-flexbox;
@@ -112,11 +123,13 @@ a {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
+
 .menu-icon svg {
   fill: var(--brand-icon-2);
 }
-.header .menu-toggle,
-.menu-icon {
+
+
+.menu-toggle {
   display: none;
   visibility: hidden;
 }
@@ -128,15 +141,28 @@ a {
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 521px) {
+@media screen and (max-width: 520px) {
   .header nav {
     display: none;
   }
+
   .header .menu-toggle,
   .menu-icon {
     display: block;
     visibility: visible;
   }
+
+  .header .logo pre {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .header .logo span {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-right: 2px;
+  }
+
   .menu-toggle {
     display: none;
     position: relative;
@@ -148,9 +174,11 @@ a {
     z-index: 99;
     transition: opacity 100s ease;
   }
+
   .menu-toggle.active {
     opacity: 1;
   }
+
   .menu-toggle li {
     line-height: 20px;
     padding: 4px;
@@ -163,6 +191,7 @@ a {
     box-shadow: 0 0.5rem 1rem var(--bg-1);
 
   }
+
   .menu-toggle a {
     font-family: var(--font-text);
     font-size: var(--normal-font-size);
@@ -171,5 +200,13 @@ a {
 
   .menu-icon .close {
     display: none;
+  }
+}
+
+@media screen and (min-width: 521px) {
+
+  .header .menu-icon {
+    display: none;
+    visibility: hidden;
   }
 }
